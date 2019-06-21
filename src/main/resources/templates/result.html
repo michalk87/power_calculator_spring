@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>Power Form </title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+</head>
+<body bgcolor="#ffe4b5">
+
+<center>
+
+<font color="#1e90ff">
+
+<h1> Koszt poniesiony za używanie urządzenia: </h1>
+
+</font>
+
+<HR NOSHADE>
+
+<p th:text = " 'Moc urządzenia: ' + ${device.power} + ' W'" />
+
+<p th:text = " 'Cena za godzinę: ' + ${device.priceForOneHour} + ' zł'" />
+
+<p th:text = " 'Cena za dobę: ' + ${device.priceForOneDay} + ' zł'" />
+
+<a href ="/device"> Wróć do poprzedniej strony </a>
+
+</center>
+
+<footer>
+    Autor:
+    <address>Michał Kijowski</address>
+</footer>
+
+</body>
+</html>

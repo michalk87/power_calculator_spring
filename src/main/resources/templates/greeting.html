@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>Power Form</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+
+</head>
+<body bgcolor="#ffe4b5">
+<center>
+    <font color="#1e90ff">
+
+        <h1>Kalkulator kosztów za zużywaną energię elektryczną </h1>
+
+    </font>
+    <HR NOSHADE>
+
+    <form action="#" th:action="@{device}" th:object="${device}" method="post">
+
+        <p>Wpisz moc urządzenia: <input type="text" th:field="*{power}"/> W </p>
+
+        <p>Następnie kliknij <input type="submit" value="   Enter   "/></p>
+
+        <p>Wyczyść okno <input type="reset" value="  Reset  "></p>
+
+    </form>
+
+</center>
+
+<footer>
+    Autor:
+    <address>Michał Kijowski</address>
+</footer>
+
+</body>
+</html>
